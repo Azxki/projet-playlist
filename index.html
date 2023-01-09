@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projet Playlist</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<div class="modal-container">
+
+    <div class="overlay modal-trigger"></div>
+
+    <div class="modal" role="dialog" aria-labelledby="modalTitle" aria-describedby="dialogDesc">
+        <button
+                aria-label="close modal"
+                class="close-modal modal-trigger"
+                id="add-playlist">Créer</button>
+        <label for="modalTitle"></label>
+        <input type="text" name="" id="modalTitle" placeholder="Nom de la playlist">
+        <label for="type"></label>
+        <select name="musique" id="type">
+            <option value="RapFR">RAP FR</option>
+            <option value="RapUS">RAP US</option>
+            <option value="Jazz">JAZZ</option>
+            <option value="Rock">ROCK</option>
+            <option value="Dubstep">DUBSTEP</option>
+            <option value="Electro">ELECTRO</option>
+        </select>
+    </div>
+</div>
+
+<button class="modal-btn modal-trigger">Add Playlist</button>
+<button class="modal-btn modal-rename">Rename Playlist</button>
+<p></p>
+</body>
+<script src="app.js"></script>
+</html>
